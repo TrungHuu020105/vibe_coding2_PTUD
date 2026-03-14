@@ -22,13 +22,43 @@ export default function LoginPage({ onLoginSuccess }) {
   };
 
   return (
-    <div className="login-wrap">
-      <form className="card login" onSubmit={handleSubmit}>
-        <h2>Đăng nhập hệ thống thư viện</h2>
+    <div className="login-screen">
+      <div className="login-hero">
+        <div className="login-hero-icon">📖</div>
+        <h1>Thư Viện Đại Học</h1>
+        <p>Hệ thống Quản lý Thư viện</p>
+      </div>
+
+      <form className="login-panel" onSubmit={handleSubmit}>
+        <h2>Đăng nhập</h2>
         {error && <p className="error">{error}</p>}
-        <label>Tên đăng nhập<input value={username} onChange={(e) => setUsername(e.target.value)} /></label>
-        <label>Mật khẩu<input type="password" value={password} onChange={(e) => setPassword(e.target.value)} /></label>
-        <button type="submit">Đăng nhập</button>
+
+        <label className="login-label">
+          Tên đăng nhập
+          <input
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="admin"
+          />
+        </label>
+
+        <label className="login-label">
+          Mật khẩu
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="••••••••"
+          />
+        </label>
+
+        <button type="submit" className="login-submit">Đăng nhập</button>
+
+        <div className="login-demo-box">
+          <strong>Tài khoản demo:</strong>
+          <p>Admin: <code>admin</code> / <code>admin123</code></p>
+          <p>Thủ thư: <code>thuthu1</code> / <code>123456</code></p>
+        </div>
       </form>
     </div>
   );

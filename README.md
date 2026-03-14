@@ -1,5 +1,14 @@
 # Library Management System - FastAPI + React Vite
+## Thông Tin Nhóm
 
+**Nhóm**
+
+- Thành viên 1: Huỳnh Nhật Hào - 23663871  
+- Thành viên 2: Lê Trung Hữu - 23666491  
+- Thành viên 3: Phan Gia Huy - 23674141  
+- Thành viên 4: Trần Quốc Huy - 23637731
+
+  
 ## Stack
 - Backend: FastAPI + SQLAlchemy + SQLite + JWT
 - Frontend: React + Vite + React Router + Axios

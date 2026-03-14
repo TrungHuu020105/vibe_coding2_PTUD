@@ -1,0 +1,18 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { margin: 0; background: linear-gradient(125deg, #eaf4ff, #f9fcff); color: #102436; }
+.topbar { background: #0d4f79; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
+.userinfo { display: flex; align-items: center; gap: 12px; }
+.menu { display: flex; gap: 10px; flex-wrap: wrap; background: #dbedf9; padding: 10px 20px; }
+.menu a { color: #0d4f79; text-decoration: none; font-weight: 600; }
+.container { padding: 20px; }
+.card { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 16px; box-shadow: 0 4px 14px rgba(9, 59, 92, 0.1); }
+.grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); align-items: end; }
+label { display: flex; flex-direction: column; gap: 4px; }
+input, select, button { padding: 8px; }
+button { background: #0d4f79; color: #fff; border: none; border-radius: 8px; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #d8e6f2; padding: 8px; text-align: left; vertical-align: top; }
+th { background: #eff6fb; }
+.error { color: #b00020; font-weight: 700; }
+.login-wrap { min-height: 100vh; display: flex; justify-content: center; align-items: center; }
+.login { width: 400px; }
